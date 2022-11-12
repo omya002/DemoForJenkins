@@ -36,6 +36,7 @@ public class StepDefinition {
 		
 		driver.findElement(By.name("SubmitLogin")).click();
 		
+		System.out.println("Check for Jenkins Update 1");
        
     }
 
@@ -43,6 +44,8 @@ public class StepDefinition {
     public void verify_that_user_is_successfully_logged_in() throws Throwable {
     	
     	System.out.println("Login Successful...!");
+    	
+    	System.out.println("Check for Jenkins Update 2");
         
     }
 
@@ -50,7 +53,8 @@ public class StepDefinition {
     public void navigate_to_something_site(String strArg1) throws Throwable {
     	
     	System.out.println("User is on Main Page...!");
-
+        
+    	System.out.println("Check for Jenkins Update 3");
     }
 
 
