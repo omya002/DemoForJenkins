@@ -3,7 +3,6 @@ package stepDefinition;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -36,6 +35,8 @@ public class StepDefinition {
 		driver.findElement(By.name("passwd")).sendKeys("Test@123");
 		
 		driver.findElement(By.name("SubmitLogin")).click();
+		
+		System.out.println("Check for Jenkins Update 1");
        
     }
 
@@ -43,6 +44,8 @@ public class StepDefinition {
     public void verify_that_user_is_successfully_logged_in() throws Throwable {
     	
     	System.out.println("Login Successful...!");
+    	
+    	System.out.println("Check for Jenkins Update 2");
         
     }
 
@@ -51,6 +54,7 @@ public class StepDefinition {
     	
     	System.out.println("User is on Main Page...!");
         
+    	System.out.println("Check for Jenkins Update 3");
     }
 
 
